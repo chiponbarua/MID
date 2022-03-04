@@ -1,0 +1,99 @@
+.Part1 {
+    display: flex;
+    font-family:  'Times New Roman', Times, serif;
+}
+.part1a {
+    margin-top: 80px;
+    margin-left: 95px;
+}
+.Part1b {
+    margin-top: 50px;
+    margin-left: 95px;
+}
+h1 {
+    font-size: 70px;
+    color: dimgrey;
+    
+}
+h2 {font-size: 90px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.Part2{
+    display: flex;
+    font-family:  'Times New Roman', Times, serif;
+    
+}
+.part2a {
+    margin-top: 80px;
+    margin-left: 95px;
+}
+.part2b{
+    margin-top: 80px;
+    margin-right: 95px;
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 20px;
+}
+.footer{
+    display: flex;
+    color: blue;
+}
+.b-example-divider {
+    display: flex;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+  /*********************************
+Media Queries for Mobile Phones:
+**********************************/
+
+@media only screen and (max-width: 688px) {
+
+    .container{
+        
+        /* flex-direction:column-reverse; */
+        grid-template-columns: 1fr;
+    }
+    .btn{/* flex-direction:column-reverse; */
+        grid-template-columns: 1fr;
+
+    }
+
+    .card {
+        grid-template-columns: 280px;
+    }
+
+    .video{
+        flex-direction: column;
+    }
+
+}
+
+
+/*****************************
+Media Queries for TABs:
+******************************/
+
+@media only screen and (max-width: 992px) and (min-width:689px)  {
+    
+    .collection-container{
+        grid-template-columns: 280px 280px;
+    }
+
+}
+  
